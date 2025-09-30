@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "oving4"
+rootProject.name = "oving6"
 include(":app")
  

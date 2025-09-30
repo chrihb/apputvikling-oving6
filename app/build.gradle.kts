@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "ntnu.idi.oving4"
+    namespace = "ntnu.idi.oving6"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "ntnu.idi.oving4"
+        applicationId = "ntnu.idi.oving6"
         minSdk = 33
         targetSdk = 36
         versionCode = 1
