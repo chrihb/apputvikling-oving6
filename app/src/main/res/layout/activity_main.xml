@@ -1,30 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#EFEEEEEE"
+    android:orientation="vertical"
     android:padding="16dp">
 
-    <TextView
-        android:id="@+id/chatHistory"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:scrollbars="vertical"
-        android:textSize="14sp"
-        android:background="#EEEEEE"
-        android:padding="8dp" />
+    <Button
+        android:id="@+id/startServerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onStartServerClick"
+        android:text="Start Server" />
+
+    <Button
+        android:id="@+id/connectButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onConnectAsClientClick"
+        android:text="Connect as Client" />
 
     <EditText
         android:id="@+id/messageInput"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Skriv melding..."
-        android:textSize="20sp" />
+        android:hint="Message" />
 
     <Button
         android:id="@+id/sendButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="onSendButtonClick"
         android:text="Send" />
+
+    <TextView
+        android:id="@+id/chatHistory"
+        android:layout_width="match_parent"
+        android:layout_height="461dp" />
 </LinearLayout>
